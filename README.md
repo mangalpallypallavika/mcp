@@ -8,13 +8,20 @@ This repository contains a list of Google's official Model Context Protocol (MCP
 
 These [remote MCP servers are managed by Google](https://docs.cloud.google.com/mcp/overview), and are available [via endpoint](https://docs.cloud.google.com/mcp/enable-disable-mcp-servers). This list will be kept up-to-date as more remote servers become available. 
 
-* [**Google Maps (Grounding Lite)**](https://developers.google.com/maps/ai/grounding-lite)  
+* [**AlloyDB for PostgreSQL**](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp)
 * [**BigQuery**](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp)  
-* [**Kubernetes Engine (GKE)**](https://docs.cloud.google.com/kubernetes-engine/docs/reference/mcp)   
-* [**Compute Engine (GCE)**](https://docs.cloud.google.com/compute/docs/reference/mcp)
-* [**Google Security Operations (Chronicle)**](https://docs.cloud.google.com/chronicle/docs/reference/mcp)
-* [**Developer Knowledge API (Google Developer Documentation)**](https://developers.google.com/knowledge/mcp)
+* [**Bigtable**](https://docs.cloud.google.com/bigtable/docs/use-bigtable-mcp)
 * [**Cloud Resource Manager**](https://docs.cloud.google.com/resource-manager/reference/mcp)
+* [**Cloud SQL for MySQL**](https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp)
+* [**Cloud SQL for PostgreSQL**](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp)
+* [**Cloud SQL for SQL Server**](https://docs.cloud.google.com/sql/docs/sqlserver/use-cloudsql-mcp)
+* [**Compute Engine (GCE)**](https://docs.cloud.google.com/compute/docs/reference/mcp)
+* [**Developer Knowledge API (Google Developer Documentation)**](https://developers.google.com/knowledge/mcp)
+* [**Firestore**](https://docs.cloud.google.com/firestore/native/docs/use-firestore-mcp)
+* [**Google Maps (Grounding Lite)**](https://developers.google.com/maps/ai/grounding-lite)  
+* [**Google Security Operations (Chronicle)**](https://docs.cloud.google.com/chronicle/docs/reference/mcp)
+* [**Kubernetes Engine (GKE)**](https://docs.cloud.google.com/kubernetes-engine/docs/reference/mcp)   
+* [**Spanner**](https://docs.cloud.google.com/spanner/docs/use-spanner-mcp)
 
 ### **Open-source MCP servers**  
 
