@@ -1,0 +1,5 @@
+store_id,store_name,zip_code,city,state,latitude,longitude,store_type,opening_date
+S001,Beverly Hills Sports Center,90210,Beverly Hills,CA,34.0901,-118.4065,Premium Retail,2022-01-15
+S002,Manhattan Athletic Hub,10001,New York,NY,40.7505,-73.9972,Flagship,2020-06-01
+S003,Chicago Fitness District,60601,Chicago,IL,41.8857,-87.6181,Multi-Sport,2021-03-20
+S004,Houston Sports Complex,77001,Houston,TX,29.7589,-95.3677,Community Center,2023-02-10
