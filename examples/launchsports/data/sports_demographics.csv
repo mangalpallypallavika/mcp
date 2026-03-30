@@ -1,0 +1,11 @@
+zip_code,city,state,population,median_age,median_income,sports_fans_pct,outdoor_enthusiasts_pct
+90210,Beverly Hills,CA,45000,42.5,185000,65,55
+90212,Beverly Hills,CA,38000,41.2,175000,62,52
+10001,New York,NY,52000,38.1,95000,78,68
+10002,New York,NY,48000,39.5,92000,75,65
+60601,Chicago,IL,42000,40.3,88000,72,58
+60602,Chicago,IL,39000,41.7,85000,70,56
+77001,Houston,TX,55000,36.8,82000,68,62
+77002,Houston,TX,51000,37.4,80000,66,60
+98101,Seattle,WA,48000,39.2,105000,74,71
+98102,Seattle,WA,44000,40.1,102000,72,69
