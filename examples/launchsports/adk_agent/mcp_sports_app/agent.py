@@ -1,38 +1,32 @@
 import os
 import dotenv
-from . import tools
+from mcp_sports_app import tools
+from google.adk.agents import LlmAgent
 
 dotenv.load_dotenv()
-project_id = os.getenv('GOOGLE_CLOUD_PROJECT', 'my-project-81240-491718')
+PROJECT_ID = os.getenv('GOOGLE_CLOUD_PROJECT', 'project_not_set')
 
 maps_toolset = tools.get_maps_mcp_toolset()
 bigquery_toolset = tools.get_bigquery_mcp_toolset()
 
-from google.adk.agents import LlmAgent
-
 root_agent = LlmAgent(
-    model='gemini-2.0-flash',
-    name='root_agent',
+    model='gemini-3.1-pro-preview',
+    name='sports_agent',
     instruction=f"""
-        You are an NCAA Basketball Sports Analytics Assistant.
-        Help users analyze basketball team performance data.
+Help the user answer questions by strategically combining insights from two sources:
 
-        1. **BigQuery toolset:** Access sports data in the mcp_sports dataset.
-           Table: mcp_sports.team_performance
-           Columns:
-           - season (2015-2019)
-           - team_city, team_name
-           - win (true/false)
-           - points_game, field_goals_pct, three_points_pct
-           - rebounds, assists, turnovers
-           Run all queries from project id: {project_id}.
-           Only use dataset: mcp_sports.
+1. **BigQuery toolset:** 
+Access NCAA basketball performance data stored in the `mcp_sports` dataset.
+Use the table: mcp_sports.team_performance
+Columns available: season, team_city, team_name, win, points_game, 
+field_goals_pct, three_points_pct, rebounds, assists, turnovers.
+Do not use any other dataset.
+Run all query jobs from project id: {PROJECT_ID}.
 
-        2. **Maps Toolset:** Find stadiums and arenas for teams.
-           Include a map hyperlink in responses.
-
-        Show results as numbered list with emojis 🏀.
-        Default season: 2018 if not mentioned.
-    """,
+2. **Maps Toolset:** 
+Use this for real-world location analysis, finding stadiums, arenas,
+and calculating travel routes between locations.
+Include a hyperlink to an interactive map in your response where appropriate.
+""",
     tools=[maps_toolset, bigquery_toolset]
 )
