@@ -1,6 +1,6 @@
 import os
 import dotenv
-import tools
+from . import tools
 
 dotenv.load_dotenv()
 project_id = os.getenv('GOOGLE_CLOUD_PROJECT', 'my-project-81240-491718')
@@ -25,7 +25,6 @@ root_agent = LlmAgent(
            - win (true/false)
            - points_game, field_goals_pct, three_points_pct
            - rebounds, assists, turnovers
-
            Run all queries from project id: {project_id}.
            Only use dataset: mcp_sports.
 
@@ -37,5 +36,3 @@ root_agent = LlmAgent(
     """,
     tools=[maps_toolset, bigquery_toolset]
 )
-
-examples/launchsports/setup/setup_bigquery.sh
