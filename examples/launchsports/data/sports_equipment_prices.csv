@@ -1,0 +1,11 @@
+equipment_id,name,category,brand,price,competitor_count,availability
+E001,Nike Running Shoes,Footwear,Nike,129.99,15,High
+E002,Adidas Soccer Ball,Ball Sports,Adidas,24.99,12,High
+E003,Wilson Basketball,Ball Sports,Wilson,59.99,10,Medium
+E004,Yoga Mat,Fitness,Gaiam,34.99,8,High
+E005,Dumbbells Set,Fitness,CAP,89.99,14,Medium
+E006,Bicycle Helmet,Cycling,Trek,49.99,11,High
+E007,Tennis Racquet,Racquet Sports,Babolat,199.99,7,Low
+E008,Golf Clubs Set,Golf,TaylorMade,799.99,5,Low
+E009,Swimming Goggles,Water Sports,Speedo,19.99,9,High
+E010,Camping Tent,Outdoor,Coleman,149.99,6,Medium
